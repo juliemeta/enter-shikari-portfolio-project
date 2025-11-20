@@ -66,6 +66,21 @@ footer a {
   font-size: 22px;
 }
 
+.lyrics {
+  font-family: "Playwrite NZ Guides";
+  font-size: 25px;
+}
+
+main {
+  background: #fff;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0px;
+}
+
 .button {
   border: 1px solid #fff;
   border-radius: 90px;
