@@ -1,5 +1,92 @@
-h1 {
+:root {
+  --main-background-color: #020408;
+  --box-shadow-dark: 0 5px 10px rgba(0, 0, 0, 0.1);
+  --box-shadow-light: 0 5px 10px rgba(255, 255, 255, 0.2);
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background: var(--main-background-color);
+}
+
+h1,
+h2 {
   font-family: "Indie Flower", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--main-background-color);
+  color: #fff;
+  font-size: 12px;
+  padding: 50px 0 20px 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+#.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/images/enter-shikari-concert-lights-color.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  text-align: center;
+  height: 80vh;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.hero-text {
+  padding-top: 15vh;
+}
+
+.hero h1 {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 25px;
+  text-shadow: 2px 2px 10px #fff;
+}
+.hero h2 {
+  font-size: 22px;
+}
+
+.button {
+  border: 1px solid #fff;
+  border-radius: 90px;
+  padding: 10px 15px;
+  background: #fff;
+  box-shadow: var(--box-shadow-light);
+  opacity: 0.8;
+  color: #212529;
+}
+
+.button:hover {
+  opacity: 1;
+  transition: ease-in-out 20ms;
+}
+
+@media (max-width 900px) {
+  .hero h1 {
+    font-size: 10px;
+  }
+
+  footer {
+    font-size: smaller;
+  }
 }
