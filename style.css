@@ -1,7 +1,7 @@
 :root {
   --main-background-color: #020408;
   --box-shadow-dark: 0 5px 10px rgba(0, 0, 0, 0.1);
-  --box-shadow-light: 0 5px 10px rgba(255, 255, 255, 0.2);
+  --box-shadow-light: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -9,10 +9,18 @@ body {
   background: var(--main-background-color);
 }
 
-h1,
-h2 {
-  font-family: "Indie Flower", cursive;
+h1 {
+  font-family: "Rock Salt", cursive;
   font-weight: 400;
+  font-style: normal;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -57,8 +65,8 @@ footer a {
 
 .hero h1 {
   font-size: 96px;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: 500;
+  line-height: 1.5;
   margin-top: 25px;
   text-shadow: 2px 2px 10px #fff;
 }
@@ -94,6 +102,7 @@ section {
 .button:hover {
   opacity: 1;
   transition: ease-in-out 20ms;
+  box-shadow: var(--box-shadow-light);
 }
 
 @media (max-width: 900px) {
@@ -106,12 +115,12 @@ section {
   }
 
   .hero h1 {
-    font-size: 55px;
+    font-size: 38px;
     margin-bottom: 8vh;
   }
 
   .hero h2 {
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 30px;
     padding-right: 30px;
   }
