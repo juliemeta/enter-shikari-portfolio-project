@@ -9,6 +9,11 @@ body {
   background: var(--main-background-color);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 h1 {
   font-family: "Rock Salt", cursive;
   font-weight: 400;
@@ -20,13 +25,23 @@ h3,
 h4 {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400;
   font-style: normal;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
+}
+
+main {
+  background: #ffffff;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 90px;
 }
 
 footer {
@@ -41,11 +56,6 @@ footer a {
   color: #fff;
 }
 
-#.container {
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("/images/enter-shikari-concert-lights-color.jpeg");
@@ -55,8 +65,6 @@ footer a {
   color: white;
   text-align: center;
   height: 80vh;
-  margin: 0 auto;
-  max-width: 1400px;
 }
 
 .hero-text {
@@ -74,24 +82,28 @@ footer a {
   font-size: 22px;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.grid-section {
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-responsive {
+  width: 100%;
+  border-radius: 4px;
+}
+
 .lyrics {
   font-family: "Playwrite NZ Guides";
   font-size: 25px;
 }
 
-main {
-  background: #fff;
-}
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0px;
-}
-
 .button {
   border: 1px solid #fff;
-  border-radius: 90px;
+  border-radius: 25px;
   padding: 10px 20px;
   background: #fff;
   box-shadow: var(--box-shadow-light);
