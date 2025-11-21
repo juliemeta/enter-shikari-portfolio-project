@@ -36,12 +36,17 @@ a {
 
 main {
   background: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px 30px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -96,11 +101,6 @@ footer a {
   border-radius: 4px;
 }
 
-.embed-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .embed-responsive {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -110,6 +110,7 @@ footer a {
 .lyrics {
   font-family: "Playwrite NZ Guides";
   font-size: 25px;
+  margin: 0 auto;
 }
 
 .button {
@@ -163,7 +164,7 @@ footer a {
   }
 
   section {
-    padding: 20px;
+    padding: 0px 20px;
   }
 
   footer {
