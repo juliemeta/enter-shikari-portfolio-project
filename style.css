@@ -29,6 +29,10 @@ h4 {
   font-style: normal;
 }
 
+h3 {
+  font-size: 24px;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -42,11 +46,8 @@ main {
 
 section {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
@@ -96,9 +97,23 @@ footer a {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#about h2 {
+  opacity: 0.5;
+  font-size: 18px;
+  line-height: 1px;
+}
+
 .img-responsive {
   max-width: 100%;
   border-radius: 4px;
+}
+
+.band-image-caption {
+  font-size: x-small;
 }
 
 .embed-responsive {
@@ -111,6 +126,9 @@ footer a {
   font-family: "Playwrite NZ Guides";
   font-size: 25px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
