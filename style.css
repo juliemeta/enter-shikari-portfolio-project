@@ -43,9 +43,10 @@ a {
 }
 
 main {
-  background: #ffffff;
+  background: #fffffff3;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 4px;
 }
 
 section {
@@ -137,11 +138,12 @@ footer a {
 
 .lyrics {
   font-family: "Playwrite NZ Guides";
-  font-size: 25px;
+  font-size: 22px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 p.lyrics {
@@ -244,6 +246,10 @@ p.lyrics {
   .timeline-grid {
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+
+  .lyrics {
+    font-size: 18px;
   }
 
   .video-right,
