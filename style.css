@@ -93,6 +93,22 @@ footer a {
   font-size: 22px;
 }
 
+.button {
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: var(--box-shadow-light);
+  opacity: 0.7;
+  color: #212529;
+}
+
+.button:hover {
+  opacity: 1;
+  transition: ease-in-out 20ms;
+  box-shadow: var(--box-shadow-light);
+}
+
 .grid {
   display: grid;
   grid-gap: 20px;
@@ -197,20 +213,10 @@ p.lyrics {
   border: none;
 }
 
-.button {
-  border: 1px solid #fff;
-  border-radius: 25px;
-  padding: 10px 20px;
-  background: #fff;
-  box-shadow: var(--box-shadow-light);
-  opacity: 0.7;
-  color: #212529;
-}
-
-.button:hover {
-  opacity: 1;
-  transition: ease-in-out 20ms;
-  box-shadow: var(--box-shadow-light);
+.footer-icons {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-size: 22px;
 }
 
 @media (max-width: 900px) {
