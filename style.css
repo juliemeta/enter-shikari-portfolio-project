@@ -1,5 +1,5 @@
 :root {
-  --main-background-color: #020408;
+  --main-background-color: #182334;
   --box-shadow-dark: 0 5px 10px rgba(0, 0, 0, 0.1);
   --box-shadow-light: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
@@ -64,11 +64,12 @@ section {
 }
 
 footer {
-  background-color: var(--main-background-color);
+  background-color: #ffffff18;
   color: #fff;
   font-size: 12px;
   padding: 50px 80px 20px 80px;
   line-height: 1.8;
+  border-radius: 4px;
 }
 
 footer a {
@@ -140,6 +141,7 @@ footer ul {
 
 .grid-3-columns {
   grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 50px;
 }
 .grid-4-columns {
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -292,13 +294,17 @@ p.lyrics {
     padding: 0;
   }
 
+  main {
+    padding-top: 5px;
+  }
+
   section {
     padding: 0px 20px;
   }
 
   footer {
     font-size: smaller;
-    padding: 50px 15px 20px 15px;
+    padding: 20px 15px 20px 15px;
     text-align: center;
   }
 
