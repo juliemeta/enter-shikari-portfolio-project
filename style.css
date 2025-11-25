@@ -93,6 +93,12 @@ footer a {
   grid-gap: 20px;
 }
 
+.timeline-grid {
+  display: grid;
+  column-gap: 90px;
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
@@ -134,12 +140,43 @@ footer a {
   align-items: center;
 }
 
-.youtube-tracks {
+.tracks-heading {
   text-align: center;
 }
 
-.youtube-tracks .lyrics {
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: #00000052;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-label {
+  text-align: center;
+}
+
+.timeline-container {
+  text-align: center;
+}
+
+.timeline-container .lyrics {
   font-size: 16px;
+}
+
+.video-right {
+  margin-top: 40%;
 }
 
 .button {
