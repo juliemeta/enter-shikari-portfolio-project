@@ -37,6 +37,14 @@ h3 {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 18px;
+}
+
+footer h4 {
+  margin-bottom: 15px;
+}
+
 a {
   text-decoration: none;
   font-weight: bold;
@@ -56,15 +64,21 @@ section {
 }
 
 footer {
-  text-align: center;
   background-color: var(--main-background-color);
   color: #fff;
   font-size: 12px;
   padding: 50px 80px 20px 80px;
+  line-height: 1.8;
 }
 
 footer a {
   color: #fff;
+}
+
+footer ul {
+  padding-left: 0;
+  padding-inline-start: 25px;
+  list-style-type: square;
 }
 
 .hero {
@@ -125,7 +139,7 @@ footer a {
 }
 
 .grid-3-columns {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
 }
 .grid-4-columns {
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -219,6 +233,12 @@ p.lyrics {
   font-size: 22px;
 }
 
+.footer-icons,
+.author,
+.copyright {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .hero {
     height: 60vh;
@@ -278,6 +298,12 @@ p.lyrics {
 
   footer {
     font-size: smaller;
-    padding: 50px 0 20px 0;
+    padding: 50px 15px 20px 15px;
+    text-align: center;
+  }
+
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
   }
 }
