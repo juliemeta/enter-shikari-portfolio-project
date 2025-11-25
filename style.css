@@ -29,6 +29,10 @@ h4 {
   font-style: normal;
 }
 
+h2 {
+  font-size: 32px;
+}
+
 h3 {
   font-size: 24px;
 }
@@ -179,6 +183,12 @@ footer a {
   margin-top: 40%;
 }
 
+.timeline hr {
+  max-width: 20%;
+  margin-top: 30px;
+  color: #212529;
+}
+
 .button {
   border: 1px solid #fff;
   border-radius: 25px;
@@ -224,9 +234,24 @@ footer a {
     opacity: 0.7;
   }
 
-  .grid {
+  .grid,
+  .timeline-grid {
     grid-template-columns: 1fr;
     grid-gap: 20px;
+  }
+
+  .video-right,
+  .video-left {
+    margin-top: 20px;
+  }
+
+  .timeline::after,
+  .timeline-label {
+    display: none;
+  }
+
+  .timeline {
+    padding: 0;
   }
 
   section {
