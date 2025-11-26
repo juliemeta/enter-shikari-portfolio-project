@@ -70,19 +70,33 @@ body {
 }
 
 .button {
-  border: 1px solid #fff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   border-radius: 25px;
   padding: 10px 20px;
-  background: #fff;
   box-shadow: var(--box-shadow-light);
-  opacity: 0.7;
-  color: #212529;
+  opacity: 0.8;
 }
 
 .button:hover {
   opacity: 1;
   transition: ease-in-out 20ms;
   box-shadow: var(--box-shadow-light);
+}
+
+.hero-button {
+  border: 1px solid #4b272b;
+  color: #ffffff;
+  background: #4b272b;
+  width: 100px;
+}
+
+.primary-button {
+  border: 1px solid #8bd5e1;
+  color: #ffffff;
+  background: #8bd5e1;
+  width: 120px;
 }
 
 #about h2 {
@@ -106,16 +120,21 @@ body {
   aspect-ratio: 16 / 9;
 }
 
-.band-image-caption {
-  font-size: x-small;
-}
-
 .lyrics {
   font-family: "Playwrite NZ Guides";
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.selected-tracks-heading {
+  text-align: center;
+}
+
+.selected-tracks-heading hr {
+  width: 80%;
+  margin-top: 50px;
 }
 
 .timeline {
@@ -130,7 +149,7 @@ body {
   content: "";
   position: absolute;
   width: 2px;
-  background: #00000052;
+  background: #4b272b;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -146,15 +165,12 @@ body {
 
 .timeline hr {
   width: 15%;
-  margin-top: 30px;
-  height: 1px;
-  background-color: #00000028;
-  border: none;
   margin-bottom: -230px;
 }
 
 .timeline-label {
   font-weight: 500;
+  color: #4b272b;
 }
 
 .video-right {
@@ -163,6 +179,7 @@ body {
 
 .card {
   background: #f4f5f5;
+  border-radius: 4px;
 }
 
 .recommendations-content {
@@ -201,6 +218,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  color: #4b272b;
 }
 
 h4 {
@@ -215,6 +233,13 @@ footer h4 {
 a {
   text-decoration: none;
   font-weight: bold;
+}
+
+hr {
+  margin-top: 30px;
+  height: 1px;
+  background-color: #00000028;
+  border: none;
 }
 
 main {
@@ -236,7 +261,7 @@ section.secondary {
 }
 
 footer {
-  background-color: #ffffff18;
+  background-color: #4b272b;
   color: #fff;
   font-size: 12px;
   padding: 50px 100px 20px 100px;
