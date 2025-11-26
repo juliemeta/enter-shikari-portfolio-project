@@ -14,75 +14,28 @@ body {
   max-width: 1400px;
 }
 
-h1 {
-  font-family: "Rock Salt", cursive;
-  font-weight: 400;
-  font-style: normal;
+.text-center {
+  text-align: center;
 }
 
-h2,
-h3,
-h4 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.grid {
+  display: grid;
+  grid-gap: 20px;
 }
 
-h2 {
-  font-size: 32px;
+.timeline-grid {
+  display: grid;
+  column-gap: 90px;
+  grid-template-columns: 1fr 1fr;
 }
 
-h3 {
-  font-size: 24px;
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
 
-h4 {
-  font-size: 18px;
-}
-
-footer h4 {
-  margin-bottom: 15px;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
-  background: #fffffff3;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-section {
-  max-width: 100%;
-  margin: 20px auto;
-  padding: 0 100px;
-}
-
-section.cards {
-  background: #212529;
-}
-
-footer {
-  background-color: #ffffff18;
-  color: #fff;
-  font-size: 12px;
-  padding: 50px 100px 20px 100px;
-  line-height: 1.8;
-  border-radius: 4px;
-}
-
-footer a {
-  color: #fff;
-}
-
-footer ul {
-  padding-left: 0;
-  padding-inline-start: 25px;
-  list-style-type: square;
+.grid-3-columns {
+  grid-template-columns: 2fr 1fr 1fr;
+  column-gap: 50px;
 }
 
 .hero {
@@ -127,26 +80,6 @@ footer ul {
   box-shadow: var(--box-shadow-light);
 }
 
-.grid {
-  display: grid;
-  grid-gap: 20px;
-}
-
-.timeline-grid {
-  display: grid;
-  column-gap: 90px;
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-columns {
-  grid-template-columns: 2fr 1fr 1fr;
-  column-gap: 50px;
-}
-
 #about h2 {
   opacity: 0.5;
   font-size: 18px;
@@ -159,29 +92,20 @@ footer ul {
   box-shadow: var(--box-shadow-dark);
 }
 
-.band-image-caption {
-  font-size: x-small;
-}
-
 .responsive.youtube {
   aspect-ratio: 16 / 9;
 }
 
+.band-image-caption {
+  font-size: x-small;
+}
+
 .lyrics {
   font-family: "Playwrite NZ Guides";
-  font-size: 22px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-p.lyrics {
-  margin-top: 15px;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .timeline {
@@ -204,13 +128,10 @@ p.lyrics {
 }
 
 .timeline-container,
-.lyrics {
+.timeline-container .lyrics {
   font-size: 16px;
   text-align: center;
-}
-
-.video-right {
-  padding-top: 80%;
+  margin-top: 15px;
 }
 
 .timeline hr {
@@ -219,12 +140,94 @@ p.lyrics {
   height: 1px;
   background-color: #00000028;
   border: none;
+  margin-bottom: -230px;
+}
+
+.timeline-label {
+  font-weight: 500;
+}
+
+.video-right {
+  padding-top: 320px;
 }
 
 .footer-icons {
   margin-top: 50px;
   margin-bottom: 15px;
   font-size: 22px;
+}
+
+h1 {
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+footer h4 {
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  background: #fffffff3;
+  padding-top: 30px;
+}
+
+section {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 0 100px;
+}
+
+section.cards {
+  background: #fff;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #ffffff18;
+  color: #fff;
+  font-size: 12px;
+  padding: 50px 100px 20px 100px;
+  line-height: 1.8;
+  border-radius: 4px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer ul {
+  padding-left: 0;
+  padding-inline-start: 25px;
+  list-style-type: square;
 }
 
 @media (max-width: 900px) {
@@ -273,6 +276,14 @@ p.lyrics {
 
   .timeline {
     padding: 0;
+  }
+
+  .timeline hr {
+    margin-bottom: 0;
+  }
+
+  .video-right {
+    padding-top: 0;
   }
 
   main {
