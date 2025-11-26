@@ -34,7 +34,12 @@ body {
 }
 
 .grid-3-columns {
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+}
+
+.grid-3-columns-one-wide {
+  grid-template-columns: 1fr 2fr 1fr;
   column-gap: 50px;
 }
 
@@ -88,11 +93,16 @@ body {
 
 .responsive {
   width: 100%;
+}
+
+.responsive.image {
   border-radius: 4px;
   box-shadow: var(--box-shadow-dark);
 }
 
 .responsive.youtube {
+  border-radius: 4px;
+  box-shadow: var(--box-shadow-dark);
   aspect-ratio: 16 / 9;
 }
 
@@ -151,6 +161,19 @@ body {
   padding-top: 320px;
 }
 
+.card {
+  background: #f4f5f5;
+}
+
+.recommendations-content {
+  padding: 10px 30px 20px 30px;
+  border-radius: 4px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
 .footer-icons {
   margin-top: 50px;
   margin-bottom: 15px;
@@ -182,6 +205,7 @@ h3 {
 
 h4 {
   font-size: 18px;
+  margin-top: 5px;
 }
 
 footer h4 {
@@ -204,7 +228,7 @@ section {
   padding: 0 100px;
 }
 
-section.cards {
+section.secondary {
   background: #fff;
   padding-top: 20px;
   padding-bottom: 25px;
