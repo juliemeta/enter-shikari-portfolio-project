@@ -54,20 +54,23 @@ main {
   background: #fffffff3;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-radius: 4px;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 20px auto;
-  padding: 0px 30px;
+  padding: 0 100px;
+}
+
+section.cards {
+  background: #212529;
 }
 
 footer {
   background-color: #ffffff18;
   color: #fff;
   font-size: 12px;
-  padding: 50px 80px 20px 80px;
+  padding: 50px 100px 20px 100px;
   line-height: 1.8;
   border-radius: 4px;
 }
@@ -143,9 +146,6 @@ footer ul {
   grid-template-columns: 2fr 1fr 1fr;
   column-gap: 50px;
 }
-.grid-4-columns {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
 #about h2 {
   opacity: 0.5;
@@ -153,19 +153,18 @@ footer ul {
   line-height: 1px;
 }
 
-.img-responsive {
-  max-width: 100%;
+.responsive {
+  width: 100%;
   border-radius: 4px;
+  box-shadow: var(--box-shadow-dark);
 }
 
 .band-image-caption {
   font-size: x-small;
 }
 
-.embed-responsive {
-  width: 100%;
+.responsive.youtube {
   aspect-ratio: 16 / 9;
-  border-radius: 4px;
 }
 
 .lyrics {
@@ -175,14 +174,13 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 p.lyrics {
   margin-top: 15px;
 }
 
-.tracks-heading {
+.text-center {
   text-align: center;
 }
 
@@ -205,20 +203,14 @@ p.lyrics {
   margin-left: -1px;
 }
 
-.timeline-label {
-  text-align: center;
-}
-
-.timeline-container {
-  text-align: center;
-}
-
-.timeline-container .lyrics {
+.timeline-container,
+.lyrics {
   font-size: 16px;
+  text-align: center;
 }
 
 .video-right {
-  margin-top: 40%;
+  padding-top: 80%;
 }
 
 .timeline hr {
@@ -233,12 +225,6 @@ p.lyrics {
   margin-top: 50px;
   margin-bottom: 15px;
   font-size: 22px;
-}
-
-.footer-icons,
-.author,
-.copyright {
-  text-align: center;
 }
 
 @media (max-width: 900px) {
@@ -278,11 +264,6 @@ p.lyrics {
 
   .lyrics {
     font-size: 18px;
-  }
-
-  .video-right,
-  .video-left {
-    margin-top: 20px;
   }
 
   .timeline::after,
