@@ -2,6 +2,7 @@
   --main-background-color: #182334;
   --box-shadow-dark: 0 5px 10px rgba(0, 0, 0, 0.1);
   --box-shadow-light: 0 10px 20px rgba(255, 255, 255, 0.2);
+  --theme-color: #4b272b;
 }
 
 body {
@@ -86,9 +87,9 @@ body {
 }
 
 .hero-button {
-  border: 1px solid #4b272b;
+  border: 1px solid var(--theme-color);
   color: #ffffff;
-  background: #4b272b;
+  background: var(--theme-color);
   width: 100px;
 }
 
@@ -128,13 +129,22 @@ body {
   align-items: center;
 }
 
+.lyrics .lyrical-theme {
+  font-size: 20px;
+}
+
 .selected-tracks-heading {
   text-align: center;
 }
 
+.selected-tracks-heading h2 {
+  color: var(--theme-color);
+}
+
 .selected-tracks-heading hr {
-  width: 80%;
-  margin-top: 50px;
+  width: 45%;
+  margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .timeline {
@@ -148,8 +158,8 @@ body {
 .timeline::after {
   content: "";
   position: absolute;
-  width: 2px;
-  background: #4b272b;
+  width: 1px;
+  background: var(--theme-color);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -169,8 +179,7 @@ body {
 }
 
 .timeline-label {
-  font-weight: 500;
-  color: #4b272b;
+  color: var(--theme-color);
 }
 
 .video-right {
@@ -182,9 +191,18 @@ body {
   border-radius: 4px;
 }
 
+.card.spotify {
+  background: #9d0000;
+}
+
 .recommendations-content {
-  padding: 10px 30px 20px 30px;
+  padding: 10px 25px 0 25px;
   border-radius: 4px;
+}
+
+.recommendations-content h4 {
+  color: var(--theme-color);
+  font-weight: 500;
 }
 
 .card p {
@@ -218,7 +236,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  color: #4b272b;
+  color: var(--theme-color);
 }
 
 h4 {
@@ -261,7 +279,7 @@ section.secondary {
 }
 
 footer {
-  background-color: #4b272b;
+  background-color: var(--theme-color);
   color: #fff;
   font-size: 12px;
   padding: 50px 100px 20px 100px;
