@@ -28,6 +28,7 @@ body {
   display: grid;
   column-gap: 90px;
   grid-template-columns: 1fr 1fr;
+  padding: 0 50px;
 }
 
 .grid-2-columns {
@@ -284,7 +285,7 @@ main {
 section {
   max-width: 100%;
   margin: 20px auto;
-  padding: 0 50px;
+  padding: 0 100px;
 }
 
 section.secondary {
