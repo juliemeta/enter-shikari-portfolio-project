@@ -127,6 +127,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .lyrics .lyrical-theme {
@@ -139,12 +140,6 @@ body {
 
 .selected-tracks-heading h2 {
   color: var(--theme-color);
-}
-
-.selected-tracks-heading hr {
-  width: 45%;
-  margin-top: 70px;
-  margin-bottom: 50px;
 }
 
 .timeline {
@@ -184,6 +179,27 @@ body {
 
 .video-right {
   padding-top: 320px;
+}
+
+.table-section h2 {
+  margin-bottom: 15px;
+}
+
+.table-section th {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.table-section td {
+  border-bottom: 1px solid lightgray;
+}
+
+.table-section .year {
+  padding-left: 25px;
+}
+
+.table-container {
+  overflow-x: auto;
 }
 
 .card {
@@ -278,6 +294,10 @@ section.secondary {
   margin-bottom: 0;
 }
 
+section table {
+  margin: 15px auto;
+}
+
 footer {
   background-color: var(--theme-color);
   color: #fff;
@@ -299,11 +319,11 @@ footer ul {
 
 @media (max-width: 900px) {
   .hero {
-    height: 60vh;
+    height: 100vh;
   }
 
   .hero-text {
-    padding-top: 10vh;
+    padding-top: 15vh;
   }
 
   .hero h1 {
